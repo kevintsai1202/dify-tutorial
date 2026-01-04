@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dify 完全教學 - 從入門到精通，掌握 AI 應用開發平台。互動式教學網站，包含環境準備、基礎入門、實戰應用、進階開發等完整課程。">
+    <meta name="keywords" content="Dify, AI, 人工智慧, 教學, 課程, RAG, Workflow, 插件開發, MCP">
+    <meta name="author" content="Kevin Tsai">
+
+    <title>Dify 零代碼革命</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/Dify logo.png">
+
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Prism.js - 程式碼語法高亮 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/toolbar/prism-toolbar.min.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+
+    <!-- 主樣式表 -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- 載入動畫 -->
+    <div id="loader" class="loader">
+        <div class="loader-content">
+            <div class="loader-spinner"></div>
+            <p>載入課程內容中...</p>
+        </div>
+    </div>
+
+    <!-- 主容器 -->
+    <div class="app-container">
+
+        <!-- 側邊欄 -->
+        <aside class="sidebar" id="sidebar">
+            <!-- 側邊欄標題區 -->
+            <div class="sidebar-header">
+                <div class="logo">
+                    <img src="assets/Dify logo.png" alt="Dify Logo" class="logo-img">
+                    <span>Dify 零代碼革命</span>
+                </div>
+                <button class="sidebar-toggle" id="sidebarToggle" aria-label="收合側邊欄">
+                    <i class="fa-solid fa-angles-left"></i>
+                </button>
+            </div>
+
+            <!-- 學習進度區 -->
+            <div class="progress-section">
+                <div class="progress-header">
+                    <span class="progress-label">學習進度</span>
+                    <span class="progress-percentage" id="progressPercentage">0%</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progressFill" style="width: 0%"></div>
+                </div>
+            </div>
+
+            <!-- 導航選單 -->
+            <nav class="sidebar-nav" id="sidebarNav">
+                <!-- 由 JavaScript 動態生成 -->
+            </nav>
+
+            <!-- 側邊欄底部 -->
+            <div class="sidebar-footer">
+                <div class="timer-section">
+                    <div class="timer-item">
+                        <i class="fa-regular fa-clock"></i>
+                        <span>今日學習</span>
+                        <span class="timer-value" id="todayTimer">00:00:00</span>
+                    </div>
+                    <div class="timer-item">
+                        <i class="fa-solid fa-hourglass-half"></i>
+                        <span>累計時間</span>
+                        <span class="timer-value" id="totalTimer">00:00:00</span>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- 側邊欄展開按鈕（收合時顯示） -->
+        <button class="sidebar-expand-btn" id="sidebarExpandBtn" aria-label="展開側邊欄">
+            <i class="fa-solid fa-chevron-right"></i>
+        </button>
+
+        <!-- 側邊欄遮罩（行動版用） -->
+        <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+        <!-- 主內容區 -->
+        <main class="main-content">
+
+            <!-- 頁首 -->
+            <header class="header">
+                <div class="header-left">
+                    <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="開啟選單">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                    <div class="breadcrumb" id="breadcrumb">
+                        <span class="breadcrumb-item">首頁</span>
+                    </div>
+                </div>
+                <div class="header-right">
+                    <!-- 社群連結 -->
+                    <div class="social-links">
+                        <a href="https://www.youtube.com/@pg-kt?sub_confirmation=1" target="_blank" rel="noopener"
+                            class="social-link youtube" title="YouTube 頻道">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                        <a href="https://www.facebook.com/profile.php?id=61564137718583" target="_blank" rel="noopener"
+                            class="social-link facebook" title="Facebook 粉絲專頁">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                        <a href="https://www.threads.com/@cai.chengkai" target="_blank" rel="noopener"
+                            class="social-link threads" title="Threads">
+                            <i class="fa-brands fa-threads"></i>
+                        </a>
+                        <a href="https://github.com/kevintsai1202/dify-tutorial" target="_blank" rel="noopener"
+                            class="social-link github" title="GitHub">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </div>
+                    <!-- 主題切換 -->
+                    <button class="theme-toggle" id="themeToggle" aria-label="切換主題">
+                        <i class="fa-solid fa-moon"></i>
+                    </button>
+                </div>
+            </header>
+
+            <!-- 歡迎區（首頁顯示） -->
+            <section class="welcome-section" id="welcomeSection">
+                <!-- 課程封面區 -->
+                <div class="course-hero">
+                    <div class="course-cover-wrapper">
+                        <img src="assets/課程封面_01_課程封面_1000x620.jpg" alt="課程封面" class="course-cover-img">
+                    </div>
+                    <div class="course-instructor">
+                        <img src="assets/Kevin logo.png" alt="Kevin" class="instructor-avatar">
+                        <span class="instructor-name">凱文大叔</span>
+                    </div>
+                </div>
+
+                <div class="welcome-content">
+                    <div class="welcome-badge">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                        <span>零代碼 AI 開發</span>
+                    </div>
+                    <h1 class="welcome-title">
+                        <span class="gradient-text">Dify 零代碼革命</span>
+                    </h1>
+                    <p class="welcome-subtitle">打造你的第一個 AI Agent</p>
+                    <p class="welcome-description">
+                        不會寫程式？沒關係！透過 Dify，你也能輕鬆打造專屬的 AI 助理。<br>
+                        從環境建置到進階應用，帶你一步步掌握 AI Agent、RAG 知識庫、Workflow 自動化流程，<br>
+                        讓 AI 成為你工作與生活中的最佳夥伴！
+                    </p>
+
+                    <div class="welcome-stats">
+                        <div class="stat-item">
+                            <div class="stat-icon"><i class="fa-solid fa-book"></i></div>
+                            <div class="stat-value">6</div>
+                            <div class="stat-label">章節</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-icon"><i class="fa-solid fa-file-lines"></i></div>
+                            <div class="stat-value">47</div>
+                            <div class="stat-label">單元</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-icon"><i class="fa-regular fa-clock"></i></div>
+                            <div class="stat-value">5+</div>
+                            <div class="stat-label">小時</div>
+                        </div>
+                    </div>
+
+                    <button class="welcome-cta" id="startLearningBtn">
+                        <span>開始學習</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+
+                <!-- 課程大綱預覽 -->
+                <div class="course-overview" id="courseOverview">
+                    <!-- 由 JavaScript 動態生成 -->
+                </div>
+            </section>
+
+            <!-- 課程內容區 -->
+            <article class="content-section" id="contentSection" style="display: none;">
+                <div class="content-header">
+                    <div class="content-meta">
+                        <span class="chapter-badge" id="chapterBadge">第 1 章</span>
+                        <span class="duration-badge" id="durationBadge">
+                            <i class="fa-regular fa-clock"></i>
+                            <span>10 分鐘</span>
+                        </span>
+                    </div>
+                    <h1 class="content-title" id="contentTitle">課程標題</h1>
+                </div>
+
+                <div class="content-body" id="contentBody">
+                    <!-- Markdown 渲染後的內容 -->
+                </div>
+
+                <!-- 導航按鈕 -->
+                <div class="content-navigation">
+                    <button class="nav-btn prev-btn" id="prevBtn" disabled>
+                        <i class="fa-solid fa-chevron-left"></i>
+                        <div class="nav-btn-text">
+                            <span class="nav-btn-label">上一單元</span>
+                            <span class="nav-btn-title" id="prevTitle">-</span>
+                        </div>
+                    </button>
+
+                    <button class="complete-btn" id="completeBtn">
+                        <i class="fa-regular fa-circle-check"></i>
+                        <span>標記為已完成</span>
+                    </button>
+
+                    <button class="nav-btn next-btn" id="nextBtn" disabled>
+                        <div class="nav-btn-text">
+                            <span class="nav-btn-label">下一單元</span>
+                            <span class="nav-btn-title" id="nextTitle">-</span>
+                        </div>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </button>
+                </div>
+            </article>
+
+            <!-- 頁尾 -->
+            <footer class="footer">
+                <p>
+                    <i class="fa-solid fa-heart"></i>
+                    由 AI 驅動開發，展示 Dify 的強大能力
+                </p>
+                <p class="footer-links">
+                    <a href="https://github.com/kevintsai1202/dify-tutorial" target="_blank" rel="noopener">
+                        <i class="fa-brands fa-github"></i> GitHub
+                    </a>
+                    <span class="separator">|</span>
+                    <a href="https://dify.ai" target="_blank" rel="noopener">
+                        <i class="fa-solid fa-external-link"></i> Dify 官網
+                    </a>
+                </p>
+            </footer>
+        </main>
+    </div>
+
+    <!-- 返回頂部按鈕 -->
+    <button class="back-to-top" id="backToTop" aria-label="返回頂部">
+        <i class="fa-solid fa-chevron-up"></i>
+    </button>
+
+    <!-- Toast 通知 -->
+    <div class="toast-container" id="toastContainer"></div>
+
+    <!-- 外部腳本 -->
+    <!-- Marked.js - Markdown 解析 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/11.1.1/marked.min.js"></script>
+
+    <!-- Prism.js - 程式碼高亮 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/toolbar/prism-toolbar.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js"></script>
+
+    <!-- 主腳本 -->
+    <script src="app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,283 @@
+{
+    "version": "1.0.0",
+    "title": "Dify 零代碼革命",
+    "subtitle": "打造你的第一個 AI Agent",
+    "estimatedTotalTime": 300,
+    "chapters": [
+        {
+            "id": "chapter-1",
+            "title": "入門篇",
+            "subtitle": "Dify 基礎入門",
+            "icon": "fa-solid fa-book-open",
+            "duration": 50,
+            "units": [
+                {
+                    "id": "unit-1-0",
+                    "title": "學習指南",
+                    "duration": 5,
+                    "contentPath": "課綱/學習指南.md"
+                },
+                {
+                    "id": "unit-1-1",
+                    "title": "課程介紹",
+                    "duration": 5,
+                    "contentPath": "課綱/1.入門篇 - Dify 基礎入門/單元 1 - 課程介紹/readme.md"
+                },
+                {
+                    "id": "unit-1-2",
+                    "title": "Dify 雲端版本與社群版本差異",
+                    "duration": 10,
+                    "contentPath": "課綱/1.入門篇 - Dify 基礎入門/單元 2 - Dify 雲端版本與社群版本差異/readme.md"
+                },
+                {
+                    "id": "unit-1-3",
+                    "title": "介面說明",
+                    "duration": 10,
+                    "contentPath": "課綱/1.入門篇 - Dify 基礎入門/單元 3 - 介面說明/readme.md"
+                },
+                {
+                    "id": "unit-1-4",
+                    "title": "AI 模型設定說明",
+                    "duration": 10,
+                    "contentPath": "課綱/1.入門篇 - Dify 基礎入門/單元 4 - AI 模型設定說明/readme.md"
+                },
+                {
+                    "id": "unit-1-5",
+                    "title": "五種應用的適用場景介紹",
+                    "duration": 5,
+                    "contentPath": "課綱/1.入門篇 - Dify 基礎入門/單元 5 - 五種應用的適用場景介紹/readme.md"
+                },
+                {
+                    "id": "unit-1-6",
+                    "title": "聊天助手與文字生成應用說明",
+                    "duration": 5,
+                    "contentPath": "課綱/1.入門篇 - Dify 基礎入門/單元 6 - 聊天助手與文字生成應用說明/readme.md"
+                }
+            ]
+        },
+        {
+            "id": "chapter-2",
+            "title": "環境準備篇",
+            "subtitle": "增加社群版安裝方式",
+            "icon": "fa-solid fa-gear",
+            "duration": 30,
+            "units": [
+                {
+                    "id": "unit-2-1",
+                    "title": "本地安裝 Docker",
+                    "duration": 10,
+                    "contentPath": "課綱/2.環境準備篇（增加社群版安裝方式）/單元 1 - 本地安裝 Docker/readme.md"
+                },
+                {
+                    "id": "unit-2-2",
+                    "title": "安裝社群版 Dify",
+                    "duration": 10,
+                    "contentPath": "課綱/2.環境準備篇（增加社群版安裝方式）/單元 2 - 安裝社群版 Dify/readme.md"
+                },
+                {
+                    "id": "unit-2-3",
+                    "title": "透過 Zeabur 安裝社群版 Dify",
+                    "duration": 10,
+                    "contentPath": "課綱/2.環境準備篇（增加社群版安裝方式）/單元 3 - 透過 Zeabur 安裝社群版 Dify/readme.md"
+                }
+            ]
+        },
+        {
+            "id": "chapter-3",
+            "title": "基本操作篇",
+            "subtitle": "打造第一個 AI 對話助手",
+            "icon": "fa-solid fa-comments",
+            "duration": 35,
+            "units": [
+                {
+                    "id": "unit-3-1",
+                    "title": "插件系統介紹",
+                    "duration": 5,
+                    "contentPath": "課綱/3.基本操作篇 - 打造第一個 AI 對話助手/單元 1 - 插件系統介紹/readme.md"
+                },
+                {
+                    "id": "unit-3-2",
+                    "title": "常用工具說明",
+                    "duration": 5,
+                    "contentPath": "課綱/3.基本操作篇 - 打造第一個 AI 對話助手/單元 2 - 常用工具說明/readme.md"
+                },
+                {
+                    "id": "unit-3-3",
+                    "title": "Agent 說明",
+                    "duration": 5,
+                    "contentPath": "課綱/3.基本操作篇 - 打造第一個 AI 對話助手/單元 3 - Agent 說明/readme.md"
+                },
+                {
+                    "id": "unit-3-4",
+                    "title": "工作流說明",
+                    "duration": 5,
+                    "contentPath": "課綱/3.基本操作篇 - 打造第一個 AI 對話助手/單元 4 - 工作流說明/readme.md"
+                },
+                {
+                    "id": "unit-3-5",
+                    "title": "工作流節點介紹",
+                    "duration": 5,
+                    "contentPath": "課綱/3.基本操作篇 - 打造第一個 AI 對話助手/單元 5 - 工作流節點介紹/readme.md"
+                },
+                {
+                    "id": "unit-3-6",
+                    "title": "手動驅動工作流 vs 事件驅動工作流",
+                    "duration": 5,
+                    "contentPath": "課綱/3.基本操作篇 - 打造第一個 AI 對話助手/單元 6 - 手動驅動工作流 vs 事件驅動工作流/readme.md"
+                },
+                {
+                    "id": "unit-3-7",
+                    "title": "聊天流說明",
+                    "duration": 5,
+                    "contentPath": "課綱/3.基本操作篇 - 打造第一個 AI 對話助手/單元 7 - 聊天流說明/readme.md"
+                }
+            ]
+        },
+        {
+            "id": "chapter-4",
+            "title": "應用篇",
+            "subtitle": "實戰應用開發",
+            "icon": "fa-solid fa-database",
+            "duration": 25,
+            "units": [
+                {
+                    "id": "unit-4-1",
+                    "title": "RAG 概念",
+                    "duration": 5,
+                    "contentPath": "課綱/4.應用篇 - 實戰應用開發/單元 1 - RAG 概念/readme.md"
+                },
+                {
+                    "id": "unit-4-2",
+                    "title": "Embedding 模型說明",
+                    "duration": 5,
+                    "contentPath": "課綱/4.應用篇 - 實戰應用開發/單元 2 - Embedding 模型說明/readme.md"
+                },
+                {
+                    "id": "unit-4-3",
+                    "title": "Rerank 模型說明",
+                    "duration": 5,
+                    "contentPath": "課綱/4.應用篇 - 實戰應用開發/單元 3 - Rerank 模型說明/readme.md"
+                },
+                {
+                    "id": "unit-4-4",
+                    "title": "Dify 中 RAG 的兩種類型",
+                    "duration": 5,
+                    "contentPath": "課綱/4.應用篇 - 實戰應用開發/單元 4 - Dify 中 RAG 的兩種類型/readme.md"
+                },
+                {
+                    "id": "unit-4-5",
+                    "title": "提升 RAG 準確率的小技巧",
+                    "duration": 5,
+                    "contentPath": "課綱/4.應用篇 - 實戰應用開發/單元 5 - 提升 RAG 準確率的小技巧/readme.md"
+                }
+            ]
+        },
+        {
+            "id": "chapter-5",
+            "title": "進階應用篇",
+            "subtitle": "進階技巧與深度應用",
+            "icon": "fa-solid fa-code-branch",
+            "duration": 45,
+            "units": [
+                {
+                    "id": "unit-5-1",
+                    "title": "將流程匯出成工具",
+                    "duration": 5,
+                    "contentPath": "課綱/5.進階應用篇 - 進階技巧與深度應用/單元 1 - 將流程匯出成工具/readme.md"
+                },
+                {
+                    "id": "unit-5-2",
+                    "title": "自定義工具與 HTTP 節點的差別",
+                    "duration": 5,
+                    "contentPath": "課綱/5.進階應用篇 - 進階技巧與深度應用/單元 2 - 自定義工具與 HTTP 節點的差別/readme.md"
+                },
+                {
+                    "id": "unit-5-3",
+                    "title": "代碼節點進階應用",
+                    "duration": 10,
+                    "contentPath": "課綱/5.進階應用篇 - 進階技巧與深度應用/單元 3 - 代碼節點進階應用-讓 AI 協助完成簡易代碼/readme.md"
+                },
+                {
+                    "id": "unit-5-4",
+                    "title": "模板轉換節點進階應用",
+                    "duration": 5,
+                    "contentPath": "課綱/5.進階應用篇 - 進階技巧與深度應用/單元 4 - 模板轉換節點進階應用-讓 AI 協助產生 Jinja2 模板語法/readme.md"
+                },
+                {
+                    "id": "unit-5-5",
+                    "title": "迭代節點進階應用",
+                    "duration": 5,
+                    "contentPath": "課綱/5.進階應用篇 - 進階技巧與深度應用/單元 5 - 迭代節點進階應用-完成重複性工作/readme.md"
+                },
+                {
+                    "id": "unit-5-6",
+                    "title": "循環節點與迭代節點的差異",
+                    "duration": 5,
+                    "contentPath": "課綱/5.進階應用篇 - 進階技巧與深度應用/單元 6 - 循環節點與迭代節點的差異 - 能用來做甚麼/readme.md"
+                },
+                {
+                    "id": "unit-5-7",
+                    "title": "網路爬蟲工具應用",
+                    "duration": 5,
+                    "contentPath": "課綱/5.進階應用篇 - 進階技巧與深度應用/單元 7 - 網路爬蟲工具應用/readme.md"
+                },
+                {
+                    "id": "unit-5-8",
+                    "title": "擴展插件 - 讓你的 AI 串接外部程式",
+                    "duration": 5,
+                    "contentPath": "課綱/5.進階應用篇 - 進階技巧與深度應用/單元 8 - 擴展插件 - 讓你的 AI 串接外部程式/readme.md"
+                }
+            ]
+        },
+        {
+            "id": "chapter-6",
+            "title": "進階開發篇",
+            "subtitle": "插件與 MCP 應用（進階選修）",
+            "icon": "fa-solid fa-plug",
+            "duration": 35,
+            "units": [
+                {
+                    "id": "unit-6-1",
+                    "title": "Dify 插件系統概述",
+                    "duration": 5,
+                    "contentPath": "課綱/6.進階開發篇 - 插件與 MCP 應用（進階選修）/單元 1 - Dify 插件系統概述/readme.md"
+                },
+                {
+                    "id": "unit-6-2",
+                    "title": "插件開發環境建置",
+                    "duration": 5,
+                    "contentPath": "課綱/6.進階開發篇 - 插件與 MCP 應用（進階選修）/單元 2 - 插件開發環境建置/readme.md"
+                },
+                {
+                    "id": "unit-6-3",
+                    "title": "修改現有插件",
+                    "duration": 5,
+                    "contentPath": "課綱/6.進階開發篇 - 插件與 MCP 應用（進階選修）/單元 3 - 修改現有插件/readme.md"
+                },
+                {
+                    "id": "unit-6-4",
+                    "title": "MCP 協議",
+                    "duration": 5,
+                    "contentPath": "課綱/6.進階開發篇 - 插件與 MCP 應用（進階選修）/單元 4 - MCP 協議/readme.md"
+                },
+                {
+                    "id": "unit-6-5",
+                    "title": "將現有流程轉為 MCP 服務",
+                    "duration": 10,
+                    "contentPath": "課綱/6.進階開發篇 - 插件與 MCP 應用（進階選修）/單元 5 - 將現有流程轉為 MCP 服務/readme.md"
+                },
+                {
+                    "id": "unit-6-6",
+                    "title": "AI 應用整合",
+                    "duration": 5,
+                    "contentPath": "課綱/6.進階開發篇 - 插件與 MCP 應用（進階選修）/單元 6 - AI 應用整合/readme.md"
+                }
+            ]
+        }
+    ],
+    "socialLinks": {
+        "youtube": "https://www.youtube.com/@pg-kt?sub_confirmation=1",
+        "facebook": "https://www.facebook.com/profile.php?id=61564137718583",
+        "threads": "https://www.threads.com/@cai.chengkai"
+    }
+}
