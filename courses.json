@@ -2,7 +2,7 @@
     "version": "1.0.0",
     "title": "Dify 零代碼革命",
     "subtitle": "打造你的第一個 AI Agent",
-    "estimatedTotalTime": 300,
+    "estimatedTotalTime": 279,
     "chapters": [
         {
             "id": "chapter-1",
@@ -20,25 +20,25 @@
                 {
                     "id": "unit-1-1",
                     "title": "課程介紹",
-                    "duration": 5,
+                    "duration": 11,
                     "contentPath": "課綱/1.入門篇 - Dify 基礎入門/單元 1 - 課程介紹/readme.md"
                 },
                 {
                     "id": "unit-1-2",
                     "title": "Dify 雲端版本與社群版本差異",
-                    "duration": 10,
+                    "duration": 6,
                     "contentPath": "課綱/1.入門篇 - Dify 基礎入門/單元 2 - Dify 雲端版本與社群版本差異/readme.md"
                 },
                 {
                     "id": "unit-1-3",
                     "title": "介面說明",
-                    "duration": 10,
+                    "duration": 4,
                     "contentPath": "課綱/1.入門篇 - Dify 基礎入門/單元 3 - 介面說明/readme.md"
                 },
                 {
                     "id": "unit-1-4",
                     "title": "AI 模型設定說明",
-                    "duration": 10,
+                    "duration": 9,
                     "contentPath": "課綱/1.入門篇 - Dify 基礎入門/單元 4 - AI 模型設定說明/readme.md"
                 },
                 {
@@ -50,7 +50,7 @@
                 {
                     "id": "unit-1-6",
                     "title": "聊天助手與文字生成應用說明",
-                    "duration": 5,
+                    "duration": 10,
                     "contentPath": "課綱/1.入門篇 - Dify 基礎入門/單元 6 - 聊天助手與文字生成應用說明/readme.md"
                 }
             ]
@@ -60,24 +60,24 @@
             "title": "環境準備篇",
             "subtitle": "增加社群版安裝方式",
             "icon": "fa-solid fa-gear",
-            "duration": 30,
+            "duration": 16,
             "units": [
                 {
                     "id": "unit-2-1",
                     "title": "本地安裝 Docker",
-                    "duration": 10,
+                    "duration": 4,
                     "contentPath": "課綱/2.環境準備篇（增加社群版安裝方式）/單元 1 - 本地安裝 Docker/readme.md"
                 },
                 {
                     "id": "unit-2-2",
                     "title": "安裝社群版 Dify",
-                    "duration": 10,
+                    "duration": 6,
                     "contentPath": "課綱/2.環境準備篇（增加社群版安裝方式）/單元 2 - 安裝社群版 Dify/readme.md"
                 },
                 {
                     "id": "unit-2-3",
                     "title": "透過 Zeabur 安裝社群版 Dify",
-                    "duration": 10,
+                    "duration": 6,
                     "contentPath": "課綱/2.環境準備篇（增加社群版安裝方式）/單元 3 - 透過 Zeabur 安裝社群版 Dify/readme.md"
                 }
             ]
@@ -87,49 +87,49 @@
             "title": "基本操作篇",
             "subtitle": "打造第一個 AI 對話助手",
             "icon": "fa-solid fa-comments",
-            "duration": 35,
+            "duration": 89,
             "units": [
                 {
                     "id": "unit-3-1",
                     "title": "插件系統介紹",
                     "duration": 5,
-                    "contentPath": "課綱/3.基本操作篇 - 打造第一個 AI 對話助手/單元 1 - 插件系統介紹/readme.md"
+                    "contentPath": "課綱/3.基本操作篇 - 打造第一個 AI 對話助手/單元 1 - 插件系統介紹/README.md"
                 },
                 {
                     "id": "unit-3-2",
                     "title": "常用工具說明",
                     "duration": 5,
-                    "contentPath": "課綱/3.基本操作篇 - 打造第一個 AI 對話助手/單元 2 - 常用工具說明/readme.md"
+                    "contentPath": "課綱/3.基本操作篇 - 打造第一個 AI 對話助手/單元 2 - 常用工具說明/README.md"
                 },
                 {
                     "id": "unit-3-3",
                     "title": "Agent 說明",
-                    "duration": 5,
-                    "contentPath": "課綱/3.基本操作篇 - 打造第一個 AI 對話助手/單元 3 - Agent 說明/readme.md"
+                    "duration": 15,
+                    "contentPath": "課綱/3.基本操作篇 - 打造第一個 AI 對話助手/單元 3 - Agent 說明/README.md"
                 },
                 {
                     "id": "unit-3-4",
                     "title": "工作流說明",
-                    "duration": 5,
-                    "contentPath": "課綱/3.基本操作篇 - 打造第一個 AI 對話助手/單元 4 - 工作流說明/readme.md"
+                    "duration": 18,
+                    "contentPath": "課綱/3.基本操作篇 - 打造第一個 AI 對話助手/單元 4 - 工作流說明/README.md"
                 },
                 {
                     "id": "unit-3-5",
                     "title": "工作流節點介紹",
-                    "duration": 5,
-                    "contentPath": "課綱/3.基本操作篇 - 打造第一個 AI 對話助手/單元 5 - 工作流節點介紹/readme.md"
+                    "duration": 27,
+                    "contentPath": "課綱/3.基本操作篇 - 打造第一個 AI 對話助手/單元 5 - 工作流節點介紹/README.md"
                 },
                 {
                     "id": "unit-3-6",
                     "title": "手動驅動工作流 vs 事件驅動工作流",
-                    "duration": 5,
-                    "contentPath": "課綱/3.基本操作篇 - 打造第一個 AI 對話助手/單元 6 - 手動驅動工作流 vs 事件驅動工作流/readme.md"
+                    "duration": 9,
+                    "contentPath": "課綱/3.基本操作篇 - 打造第一個 AI 對話助手/單元 6 - 手動驅動工作流 vs 事件驅動工作流/README.md"
                 },
                 {
                     "id": "unit-3-7",
                     "title": "聊天流說明",
-                    "duration": 5,
-                    "contentPath": "課綱/3.基本操作篇 - 打造第一個 AI 對話助手/單元 7 - 聊天流說明/readme.md"
+                    "duration": 10,
+                    "contentPath": "課綱/3.基本操作篇 - 打造第一個 AI 對話助手/單元 7 - 聊天流說明/README.md"
                 }
             ]
         },
@@ -138,37 +138,37 @@
             "title": "應用篇",
             "subtitle": "實戰應用開發",
             "icon": "fa-solid fa-database",
-            "duration": 25,
+            "duration": 44,
             "units": [
                 {
                     "id": "unit-4-1",
                     "title": "RAG 概念",
                     "duration": 5,
-                    "contentPath": "課綱/4.應用篇 - 實戰應用開發/單元 1 - RAG 概念/readme.md"
+                    "contentPath": "課綱/4.應用篇 - 實戰應用開發/單元 1 - RAG 概念/README.md"
                 },
                 {
                     "id": "unit-4-2",
-                    "title": "Embedding 模型說明",
-                    "duration": 5,
-                    "contentPath": "課綱/4.應用篇 - 實戰應用開發/單元 2 - Embedding 模型說明/readme.md"
+                    "title": "Embedding 及 Rerank 模型說明",
+                    "duration": 7,
+                    "contentPath": "課綱/4.應用篇 - 實戰應用開發/單元 2 - Embedding 及 Rerank 模型說明/README.md"
                 },
                 {
                     "id": "unit-4-3",
-                    "title": "Rerank 模型說明",
-                    "duration": 5,
-                    "contentPath": "課綱/4.應用篇 - 實戰應用開發/單元 3 - Rerank 模型說明/readme.md"
+                    "title": "傳統模式進行檔案上傳及測試",
+                    "duration": 14,
+                    "contentPath": "課綱/4.應用篇 - 實戰應用開發/單元 3 - 傳統模式進行檔案上傳及測試/README.md"
                 },
                 {
                     "id": "unit-4-4",
-                    "title": "Dify 中 RAG 的兩種類型",
-                    "duration": 5,
-                    "contentPath": "課綱/4.應用篇 - 實戰應用開發/單元 4 - Dify 中 RAG 的兩種類型/readme.md"
+                    "title": "最新管線模式說明",
+                    "duration": 9,
+                    "contentPath": "課綱/4.應用篇 - 實戰應用開發/單元 4 - 最新管線模式說明/README.md"
                 },
                 {
                     "id": "unit-4-5",
-                    "title": "提升 RAG 準確率的小技巧",
-                    "duration": 5,
-                    "contentPath": "課綱/4.應用篇 - 實戰應用開發/單元 5 - 提升 RAG 準確率的小技巧/readme.md"
+                    "title": "製作Q&A問答流程",
+                    "duration": 9,
+                    "contentPath": "課綱/4.應用篇 - 實戰應用開發/單元 5 - 製作Q&A問答流程/README.md"
                 }
             ]
         },
