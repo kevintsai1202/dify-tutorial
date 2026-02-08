@@ -95,7 +95,7 @@ document.addEventListener('DOMContentLoaded', async () => {
  * @returns {Promise<void>}
  */
 async function loadCourseData() {
-    const response = await fetch('courses.json');
+    const response = await fetch(`courses.json?t=${new Date().getTime()}`);
     if (!response.ok) {
         throw new Error('無法載入課程資料');
     }
@@ -294,6 +294,7 @@ async function loadUnitContent(unitId) {
 
         contentBody.innerHTML = html;
         contentBody.classList.remove('loading');
+        contentBody.classList.remove('placeholder');
         contentBody.classList.add('animate-fadeIn');
 
         // 處理圖片路徑（相對於 contentPath）
