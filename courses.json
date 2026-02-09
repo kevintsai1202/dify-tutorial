@@ -2,14 +2,14 @@
     "version": "1.0.0",
     "title": "Dify 零代碼革命",
     "subtitle": "打造你的第一個 AI Agent",
-    "estimatedTotalTime": 279,
+    "estimatedTotalTime": 489,
     "chapters": [
         {
             "id": "chapter-1",
             "title": "入門篇",
             "subtitle": "Dify 基礎入門",
             "icon": "fa-solid fa-book-open",
-            "duration": 50,
+            "duration": 80,
             "units": [
                 {
                     "id": "unit-1-0",
@@ -52,6 +52,12 @@
                     "title": "聊天助手與文字生成應用說明",
                     "duration": 10,
                     "contentPath": "課綱/1.入門篇 - Dify 基礎入門/單元 6 - 聊天助手與文字生成應用說明/readme.md"
+                },
+                {
+                    "id": "unit-1-7",
+                    "title": "作業 - 簡易 AI 助手",
+                    "duration": 30,
+                    "contentPath": "課綱/1.入門篇 - Dify 基礎入門/作業 - 簡易 AI 助手.md"
                 }
             ]
         },
@@ -87,7 +93,7 @@
             "title": "基本操作篇",
             "subtitle": "打造第一個 AI 對話助手",
             "icon": "fa-solid fa-comments",
-            "duration": 89,
+            "duration": 119,
             "units": [
                 {
                     "id": "unit-3-1",
@@ -130,6 +136,12 @@
                     "title": "聊天流說明",
                     "duration": 10,
                     "contentPath": "課綱/3.基本操作篇 - 打造第一個 AI 對話助手/單元 7 - 聊天流說明/README.md"
+                },
+                {
+                    "id": "unit-3-8",
+                    "title": "作業 - 雙向英文翻譯 Agent",
+                    "duration": 30,
+                    "contentPath": "課綱/3.基本操作篇 - 打造第一個 AI 對話助手/作業 - 雙向英文翻譯 Agent.md"
                 }
             ]
         },
@@ -138,7 +150,7 @@
             "title": "應用篇",
             "subtitle": "實戰應用開發",
             "icon": "fa-solid fa-database",
-            "duration": 44,
+            "duration": 194,
             "units": [
                 {
                     "id": "unit-4-1",
@@ -169,6 +181,18 @@
                     "title": "製作Q&A問答流程",
                     "duration": 9,
                     "contentPath": "課綱/4.應用篇 - 實戰應用開發/單元 5 - 製作Q&A問答流程/README.md"
+                },
+                {
+                    "id": "unit-4-6",
+                    "title": "作業 - AI 智能客服機器人",
+                    "duration": 60,
+                    "contentPath": "課綱/4.應用篇 - 實戰應用開發/作業 - AI 智能客服機器人.md"
+                },
+                {
+                    "id": "unit-4-7",
+                    "title": "作業 - 企業知識查詢助手",
+                    "duration": 90,
+                    "contentPath": "課綱/4.應用篇 - 實戰應用開發/作業 - 企業知識查詢助手.md"
                 }
             ]
         },

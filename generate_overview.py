@@ -7,6 +7,11 @@
 import json
 import os
 import re
+import sys
+import io
+
+# Set stdout to utf-8 to handle emojis on Windows
+sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
 
 def extract_learning_objectives(content):
     """提取完整的學習目標列表"""
