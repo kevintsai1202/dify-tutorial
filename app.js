@@ -66,6 +66,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
         // 渲染首頁課程預覽
         renderCourseOverview();
+        updateWelcomeStats();
 
         // 初始化事件監聽
         initEventListeners();
@@ -497,6 +498,26 @@ function renderCourseOverview() {
     });
 
     container.innerHTML = html;
+}
+
+/**
+ * 更新首頁統計數據（章節數、單元數、總時數）
+ */
+function updateWelcomeStats() {
+    if (!courseData) return;
+
+    const chapters = courseData.chapters?.length || 0;
+    const units = flatUnits.length;
+    const totalMinutes = Number(courseData.estimatedTotalTime) || 0;
+    const totalHours = Math.ceil(totalMinutes / 60);
+
+    const chapterEl = document.getElementById('statChapters');
+    const unitEl = document.getElementById('statUnits');
+    const hourEl = document.getElementById('statHours');
+
+    if (chapterEl) chapterEl.textContent = String(chapters);
+    if (unitEl) unitEl.textContent = String(units);
+    if (hourEl) hourEl.textContent = `${totalHours}+`;
 }
 
 // ==========================================================================
